@@ -41,6 +41,7 @@ button {
   font-size: 4rem;
   font-weight: bold;
   margin: 10px;
+  margin-bottom:35px;
 }
 
 .stop {
@@ -51,11 +52,11 @@ button {
 .set,
 .reset {
   background-color: cadetblue;
-  color: aliceblue;
+  color: white;
 }
 label {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 input {
   padding: 5px 10px;
@@ -64,6 +65,7 @@ input {
 }
 section {
   width: 535px;
+  height: 400px;
   margin: auto;
   text-align: center;
 }

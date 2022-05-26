@@ -11,8 +11,8 @@ function App() {
   };
   console.log(targetTime);
   return (
-    <section>
-      <form className="card-box">
+    <section className='card-box'>
+      <form>
         <label htmlFor="start-time">Set Timer value in seconds: </label>
         <input
           placeholder="00s"

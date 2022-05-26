@@ -28,6 +28,7 @@ const Timer = ({ targetTime }) => {
 
   const handleSetSeconds = (targetTime) => {
     setTime(targetTime);
+    setTimerOn(true)
   };
 
   const playBeep = () => {
@@ -42,7 +43,7 @@ const Timer = ({ targetTime }) => {
   }
   return (
     <div>
-      <main className="card-box">
+      <main>
         <h1>Countdown</h1>
         <div id="display-timer">
           <span>{("0" + Math.floor((time / 3600000) % 60)).slice(-2)} :</span>
