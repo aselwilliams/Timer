@@ -1,10 +1,11 @@
+body{
+  font-family: sans-serif;
+}
 main {
   width: 500px;
-  height: 350px;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
-  font-family: sans-serif;
+  padding-top: 10px;
 }
 
 h1 {
@@ -33,6 +34,7 @@ button {
     url("https://images.pexels.com/photos/4175070/pexels-photo-4175070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: center;
+  margin-top:50px;
 }
 
 #display-timer {
