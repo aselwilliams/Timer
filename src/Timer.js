@@ -37,7 +37,7 @@ const Timer = ({ targetTime }) => {
     audio.play();
   };
 
-  if (time<= 0) {
+  if (time <= 0) {
     playBeep();
   }
   return (
@@ -50,14 +50,18 @@ const Timer = ({ targetTime }) => {
           <span>{("0" + ((time / 1000) % 60)).slice(-2)}</span>
         </div>
         <div>
-          <button onClick={()=>handleSetSeconds(targetTime)} className="set">Start</button>
+          <button onClick={() => handleSetSeconds(targetTime)} className="set">
+            Start
+          </button>
           <button
             onClick={() => setTimerOn(!timerOn)}
             className={timerOn ? "stop" : "resume"}
           >
             {timerOn ? "Pause Timer" : "Resume Timer"}
           </button>
-          <button onClick={handleReset} className="reset">Reset</button>
+          <button onClick={handleReset} className="reset">
+            Reset
+          </button>
         </div>
       </main>
     </div>

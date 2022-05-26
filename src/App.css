@@ -1,7 +1,6 @@
-
 main {
   width: 500px;
-  height:350px;
+  height: 350px;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -20,17 +19,20 @@ button {
   border: none;
   font-weight: 600;
   margin-top: 20px;
-  margin:0px 5px;
+  margin: 0px 5px;
 }
 
 .card-box {
   padding: 50px 10px;
   border: 10px solid rgb(196, 140, 199);
   border-radius: 12px;
-  background: linear-gradient(rgba(255,255,255,0.7),
-  rgba(255,255,255,0.3)),url('https://images.pexels.com/photos/4175070/pexels-photo-4175070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  background-size:cover;
-  background-position:center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://images.pexels.com/photos/4175070/pexels-photo-4175070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
 }
 
 #display-timer {
@@ -41,23 +43,25 @@ button {
 
 .stop {
   background-color: rgb(174, 97, 179);
-  color:white;
+  color: white;
 }
-.resume, .set, .reset {
+.resume,
+.set,
+.reset {
   background-color: cadetblue;
   color: aliceblue;
 }
-label{
+label {
   font-size: 20px;
   font-weight: 500;
 }
-input{
-  padding:5px 10px;
+input {
+  padding: 5px 10px;
   width: 100px;
   font-size: 20px;
 }
-section{
-  width:535px;
-  margin:auto;
+section {
+  width: 535px;
+  margin: auto;
   text-align: center;
 }
