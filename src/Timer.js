@@ -3,20 +3,19 @@ import { useState, useEffect } from "react";
 const Timer = ({ targetTime }) => {
   const [time, setTime] = useState(60000);
   const [timerOn, setTimerOn] = useState(true);
-  const [intervalID, setIntervalID] = useState(0);
 
   useEffect(() => {
     let interval = null;
     if (timerOn) {
       interval = setInterval(() => {
         setTime((prevState) => prevState - 1000);
-        // setIntervalID(interval);
       }, 1000);
     } else {
       clearInterval(interval);
     }
     if (time == 0) {
       clearInterval(interval);
+      playBeep();
     }
     return () => clearInterval(interval);
   }, [time, timerOn, targetTime]);
@@ -38,9 +37,9 @@ const Timer = ({ targetTime }) => {
     audio.play();
   };
 
-  if (time <= 0) {
-    playBeep();
-  }
+//   if (time <= 0) {
+//     playBeep();
+//   }
   return (
     <div>
       <main>
