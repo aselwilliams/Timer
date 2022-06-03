@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Timer from "./Timer";
+import SetTimer from "./SetTimer";
 
 function App() {
   const [targetTime, setTargetTime] = useState(0);

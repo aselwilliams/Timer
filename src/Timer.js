@@ -13,7 +13,7 @@ const Timer = ({ targetTime }) => {
     } else {
       clearInterval(interval);
     }
-    if (time == 0) {
+    if (time === 0) {
       clearInterval(interval);
       playBeep();
     }
@@ -37,9 +37,6 @@ const Timer = ({ targetTime }) => {
     audio.play();
   };
 
-//   if (time <= 0) {
-//     playBeep();
-//   }
   return (
     <div>
       <main>
